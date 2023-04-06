@@ -1,7 +1,5 @@
 # 酒店管理系统 DEMO
 
-# present by Nagi
-
 ## 需要的库
 
 python 3
