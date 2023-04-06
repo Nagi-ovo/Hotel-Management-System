@@ -12,6 +12,7 @@ import MainRoot
 
 now = datetime.datetime.now()
 
+
 #-------------import sqlite for server side operations and create table---------------------------------------------------------------------------------
 con = sqlite3.Connection('hm_proj.db')
 cur = con.cursor()
@@ -31,29 +32,25 @@ con.commit()
 
 
 #-----------启动画面------------------------------------------------------------------------------------------------------------------
-sroot = Tk()
-sroot.title("启动中")
-sroot.minsize(height=516,width=1150)
+def start():
+    sroot = Tk()
+    sroot.title("启动中")
+    sroot.minsize(height=516,width=1150)
 
-spath = "images/cover.jpg"
-simg = ImageTk.PhotoImage(Image.open(spath))
-my = Label(sroot,image=simg)
-my.image = simg
-my.place(x=0,y=0)
-
-login_system
-
-Label(sroot,text="欢迎进入",font='Timesnewroman 40 ',fg='black').place(x=635,y=250)
-Label(sroot,text="STARRY ",font='Timesnewroman 50 ',fg='pink').place(x=435,y=320)
-Label(sroot,text="酒店管理系统 ",font='Timesnewroman 50 ',fg='black').place(x=650,y=320)
-Label(sroot,text="组员：张泽西，臧元祥",font='Timesnewroman 20 ',fg='grey').place(x=535,y=420)
+    spath = "images/cover.jpg"
+    simg = ImageTk.PhotoImage(Image.open(spath))
+    my = Label(sroot,image=simg)
+    my.image = simg
+    my.place(x=0,y=0)
 
 
+    Label(sroot,text="欢迎进入",font='Timesnewroman 40 ',fg='black').place(x=635,y=250)
+    Label(sroot,text="STARRY ",font='Timesnewroman 50 ',fg='pink').place(x=435,y=320)
+    Label(sroot,text="酒店管理系统 ",font='Timesnewroman 50 ',fg='black').place(x=650,y=320)
+    Label(sroot,text="组员：张泽西，臧元祥",font='Timesnewroman 20 ',fg='grey').place(x=535,y=420)
 
-
-def call_mainroot():
-	sroot.destroy()
-	MainRoot.mainroot()
+    sroot.after(3000, lambda: sroot.destroy())
+    sroot.mainloop()
 
 #----------- 项目主体------------------------------------------------------------------------------------------------------------------
 def mainroot():
@@ -1042,3 +1039,13 @@ def mainroot():
     # staff()
     datetime()
     mainloop()
+
+def main():
+    login = login_system.Login()
+    login.root.mainloop()
+    # 如果登录成功，执行 mainroot 函数
+    if login.login_success == 1:
+        start()
+        mainroot()
+    else:
+        sys.exit()
