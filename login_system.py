@@ -60,8 +60,6 @@ class Login():
         # 退出程序
         sys.exit()
 
-
-
     # 启动消息循环
         #self.root.mainloop()
 

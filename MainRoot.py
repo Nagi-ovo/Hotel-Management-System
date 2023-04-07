@@ -1045,7 +1045,6 @@ def main():
     login.root.mainloop()
     # 如果登录成功，执行 mainroot 函数
     if login.login_success == 1:
-       
         start()
         mainroot()
     else:
