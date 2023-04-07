@@ -52,6 +52,14 @@ class Login():
         # 创建取消按钮组件，并设置按钮事件处理函数
         buttonCancel = tkinter.Button(self.root, text='取消', command=self.cancel)
         buttonCancel.place(x=360, y=175, width=80, height=25)
+          # 取消按钮的事件处理函数
+    def cancel(self):
+    # 清空用户输入的用户名和密码
+        self.entryName.delete(0, tkinter.END)
+        self.entryPwd.delete(0, tkinter.END)
+        # 退出程序
+        sys.exit()
+
 
 
     # 启动消息循环
@@ -73,16 +81,12 @@ class Login():
         if result is not None:
             self.login_success = 1
             tkinter.messagebox.showinfo(title='恭喜', message='登录成功！')
+            self.root.destroy()
         else:
             tkinter.messagebox.showerror('警告', message='用户名或密码错误')
             sys.exit()
         # 关闭数据库连接
         self.con.close()
 
-    # 取消按钮的事件处理函数
-    def cancel(self):
-    #清空用户输入的用户名和密码
-        self.varName.set('')
-        self.varPwd.set('')
-
+  
 
