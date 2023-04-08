@@ -85,6 +85,3 @@ class Login():
             sys.exit()
         # 关闭数据库连接
         self.con.close()
-
-  
-
