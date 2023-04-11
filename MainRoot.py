@@ -25,7 +25,7 @@ cur.execute("create table if not exists paymentsf(id number  primary key,f_name 
 
 con.commit()
 con.commit()
-cur.execute("select * from payments")
+# cur.execute("select * from payments")
 con.commit()
 x=cur.fetchall()
 con.commit()
@@ -834,6 +834,8 @@ def mainroot():
                     var.set(1)
                     def update_var(new_value):
                         var.set(new_value)
+                        pmethod = var.get()
+                        print(pmethod)
                     amtpd = str(int(rp[0]) * int(nod.get()))
                     Label(payroot, text='选择支付方式 共计￥' + str(int(rp[0]) * int(nod.get())), font='msserif 14 bold',
                           bg='White').place(x=0, y=10)
@@ -848,17 +850,19 @@ def mainroot():
                                 width=5, command=lambda: update_var(4)).place(x=0, y=170)
 
 
-                    pmethod = var.get()
-                    paycase = \
-                        {
-                            1: "现金",
-                            2: "银行卡",
-                            3: "支付宝",
-                            4: "微信"
-                        }
-                    case = paycase.get(pmethod)
+                    
+                    
 
                     def f():
+                        pmethod = var.get()
+                        paycase = \
+                            {
+                                1: "现金",
+                                2: "银行卡",
+                                3: "支付宝",
+                                4: "微信"
+                            }
+                        case = paycase.get(pmethod)
                         if var != '':
                             cur.execute("select id from paymentsf order by id desc")
                             x = cur.fetchone()
