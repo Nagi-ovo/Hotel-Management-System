@@ -7,8 +7,6 @@ import os
 import sqlite3
 import login_system
 import  sys
-import MainRoot
-
 
 now = datetime.datetime.now()
 
@@ -59,7 +57,7 @@ def mainroot():
     root.minsize(width=1080, height=550)
     root.maxsize(width=1080, height=550)
     root.configure(bg='white')
-    root.title("酒店管理系统v1.1.2")
+    root.title("酒店管理系统v2.1.2")
 
     # --------------分割-------------------------------------------------------------------------------------------------------------------
 
