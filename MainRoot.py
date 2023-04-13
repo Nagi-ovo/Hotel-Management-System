@@ -833,7 +833,7 @@ def mainroot():
                     def update_var(new_value):
                         var.set(new_value)
                         pmethod = var.get()
-                        print(pmethod)
+                        
                     amtpd = str(int(rp[0]) * int(nod.get()))
                     Label(payroot, text='选择支付方式 共计￥' + str(int(rp[0]) * int(nod.get())), font='msserif 14 bold',
                           bg='White').place(x=0, y=10)
