@@ -524,7 +524,7 @@ def mainroot():
 
             # print (idd)
             # cur.execute("create table if not exists paymentsf(id number  primary key,f_name varchar,l_name varchar,c_number varchar,email varchar , r_n number ,day varchar,month varchar,year varchar,time varchar , method varchar,totalamt varchar)")
-            cur.execute("select * from payments where id = ?", (idd,))
+            cur.execute("select * from paymentsf where id = ?", (idd,))
             x = cur.fetchall()
             # print(x)
             cur.execute("select day,month,year,time,totalamt,r_n,method from paymentsf where id = ?", (idd,))
