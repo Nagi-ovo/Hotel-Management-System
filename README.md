@@ -18,10 +18,11 @@ sqlite3
 ## 目录结构描述
 
 ```
-.
+.有用的内容
 ├── README.md              // 指南
-└── Starrt-Hotel-Management-System   // 代码
-    ├── image                   // 存储图片
+├── requiremes.txt             // 库依赖
+└── Starrt-Hotel-Management-System   // 核心代码
+    ├── image                   // 文件src
     ├── hm_proj.db              // SQLite 数据库文件
     ├── login_system.py         // 登录系统
     ├── main.py                 // 主函数
