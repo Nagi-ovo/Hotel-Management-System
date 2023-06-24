@@ -15,6 +15,7 @@ sqlite3
 
 ## 目录结构描述
 
+```
 .
 ├── README.txt              // 指南
 └── Starrt-Hotel-Management-System   // 代码
@@ -25,6 +26,7 @@ sqlite3
     ├── main.py                 // 主函数
     ├── MainRoot.py             // 主框架搭建文件
     └── test.txt                // 密码存储文档
+```
 
 ### V1.0.1 版本内容更新
 
