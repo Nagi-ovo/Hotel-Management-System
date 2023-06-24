@@ -11,7 +11,9 @@ sqlite3
 
 ## 运行方法
 
-下载文件和需要的库后，运行 main.py 即可
+1. `pip install -r requirements.txt`
+
+2. 运行 main.py 即可
 
 ## 目录结构描述
 
