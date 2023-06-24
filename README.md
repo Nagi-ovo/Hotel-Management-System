@@ -19,7 +19,6 @@ sqlite3
 .
 ├── README.md              // 指南
 └── Starrt-Hotel-Management-System   // 代码
-    ├── pyache                  // 预编译模块
     ├── image                   // 存储图片
     ├── hm_proj.db              // SQLite 数据库文件
     ├── login_system.py         // 登录系统
