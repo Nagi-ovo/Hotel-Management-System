@@ -17,7 +17,7 @@ sqlite3
 
 ```
 .
-├── README.txt              // 指南
+├── README.md              // 指南
 └── Starrt-Hotel-Management-System   // 代码
     ├── pyache                  // 预编译模块
     ├── image                   // 存储图片
