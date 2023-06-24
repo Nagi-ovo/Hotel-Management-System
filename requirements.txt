@@ -1,0 +1,5 @@
+os
+tkinter
+Pillow
+sys
+sqlite3
