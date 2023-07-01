@@ -4,27 +4,27 @@
 
 1. `pip install -r requirements.txt`
 
-2. Run main.py
+2. Run `main.py`
 
 ## Directory Structure Description
 
 ```
-. Useful Content
-├── README.md              // Guide
-├── requirements.txt       // Library dependencies
-└── Starrt-Hotel-Management-System   // Core code
-    ├── image                   // File src
-    ├── hm_proj.db              // SQLite database file
-    ├── login_system.py         // Login system
-    ├── main.py                 // Main function
-    ├── MainRoot.py             // Main framework setup file
-    └── test.txt                // Password storage document
+📁 Useful Content
+├── 📝 README.md                    // Guide
+├── 📋 requirements.txt             // Library dependencies
+└── 📁 Starrt-Hotel-Management-System   // Core code
+    ├── 🖼️ image                     // File src
+    ├── 🗄️ hm_proj.db                // SQLite database file
+    ├── 📜 login_system.py           // Login system
+    ├── 📜 main.py                   // Main function
+    ├── 📜 MainRoot.py               // Main framework setup file
+    └── 📜 test.txt                  // Password storage document
 ```
 
 ### Version 1.0.1 - Content Update
 
-- [x] Fixed known bugs *3
-- [x] Improved UI aesthetics
+- [x] Fixed known bugs 🐛🐛🐛
+- [x] Improved UI aesthetics 🎨
 
 ### Version 1.0.2 - Content Update
 
@@ -34,10 +34,10 @@
 
 ### Version 1.1.1 - Content Update
 
-- [x] Added "Login" interface
+- [x] Added "Login" interface 🔐
 - [x] Added functionality to visualize attributes such as "number of rooms" correctly from the database
 
 ### Version 1.1.2 - Content Update
 
 - [x] Fixed bug where entering incorrect password during login did not result in any punishment; now the program can be terminated properly
-- [x] Improved login interface style
+- [x] Improved login interface style 💻
