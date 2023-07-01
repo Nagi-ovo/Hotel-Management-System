@@ -8,7 +8,7 @@ tkinter
 PIL
 sys
 sqlite3
-
+- [ ] ss
 ## 运行方法
 
 1. `pip install -r requirements.txt`
