@@ -1,5 +1,6 @@
 # Hotel Management System DEMO
 
+Based on [shubhank's awsome project](https://github.com/shubhank7673/hotel-management-system), db bug fixed and new features added.
 ## How to Run
 
 1. `pip install -r requirements.txt`
